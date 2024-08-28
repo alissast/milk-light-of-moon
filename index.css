@@ -1,0 +1,244 @@
+body {
+    color: #4d382c;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+/* ----- TYPOGRAPHY ----- */
+
+h1,
+h3 {
+    margin: 0;
+}
+
+h1 {
+    color: #f2e9e1;
+    font-size: 1.75rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    color: #e5732f;
+    font-size: 1.375rem;
+    margin-top: 0;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+body, h3, p, .btn, nav a { 
+    font-family: 'Open Sans', sans-serif;
+}
+
+x
+h3 {
+    font-size: 1.25rem;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.subheading {
+    font-family: 'Dancing Script', cursive;
+    display: block;
+    font-size: 1.25rem;
+    color: #f2e9e1;
+    margin-top: 0.25em;
+}
+
+header .container {
+    background-color: rgba(23, 6, 61, 0.5);
+    padding: 1em;
+    border-radius: 5px;
+}
+
+.section-two h2 {
+    color: inherit;
+}
+
+
+/* ----- LINKS ----- */
+
+a {
+    color: #e5732f;
+    text-decoration: underline dotted;
+}
+
+a:hover,
+a:active {
+    color: #d4b44c;
+}
+
+.btn {
+    font-size: 1.125rem;
+    text-align: center;
+    font-weight: 500;
+    text-decoration: none;
+    display: block;
+    padding: 0.5em 1em;
+    margin-bottom: 1em;
+    border-radius: 4.6px;
+}
+
+.btn-dark {
+    color: #f2e9e1;
+    background: #4d382c
+}
+
+.btn-mid {
+    color: #5d3a22;
+    background: #f2e9e1;
+}
+
+.btn-light {
+    color: #202d5c;
+    background: whitesmoke;
+}
+
+.btn:hover, 
+.btn:active {
+    color: #2b238a;
+    background-color: #e5732f;
+}
+
+/* ----- LAYOUT ----- */
+
+header {
+    background-image: url("images/milk-light-of-moon.png");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+}
+
+header, 
+section, 
+footer {
+    padding: 1.25em 0;
+}
+
+header, 
+.section-two {
+    background-color: #5d3a22;
+}
+
+.section-two {
+    color: #f2e9e1;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.main-image {
+    width: 100%;
+    display: block;
+    max-width: 640px;
+    margin: 0 auto 2em;
+}
+
+.section-two-image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.feature-image {
+    width: 100%;
+    border-radius: 4.6px;
+}
+
+.feature-item {
+    flex: 1 260px;
+}
+
+footer {
+    text-align: center;
+    color: #5d3a22;
+}
+
+/* ----- NAVIGATION ----- */
+
+nav a {
+    color: #f2e9e1;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.125rem;
+    padding: 0.85em 0;
+    display: block;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+/* ----- MEDIA QUERIES ----- */
+
+@media (max-width: 767px) {
+    header {
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 1.5em;
+    }
+
+    nav a {
+        text-decoration: none;
+    }
+
+    li:not(:last-child) {
+        border-bottom: 1px dotted #a190b6;
+    }
+}
+
+@media (min-width: 768px) {
+    header,
+    section,
+    footer {
+        padding: 2.875em 0;
+    }
+
+    header .container,
+    nav ul {
+        display: flex;
+    }
+
+    header .container {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav li {
+        margin-left: 1.25em;
+    }
+
+    .btn {
+        display: inline-block;
+        margin-right: 0.5em;
+    }
+
+    h1 {
+        font-size: 2.25rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    .subheading {
+        font-size: 1.5rem;
+        color: #f5d9b3;
+    }
+
+    p {
+        font-size: 1.125rem;
+    }
+}
